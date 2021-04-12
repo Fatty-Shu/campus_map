@@ -8,4 +8,25 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-    }</style><script defer="defer" src="index.js"></script></head><body class="loading"><div id="container"></div><div class="amap-geolocations"><img src="https://a.amap.com/jsapi/static/image/plugin/waite.png" style="display: none;"></div><div class="poi-popup"></div><div class="poi-detail-popup" style="display: none;"><div class="contain-wrapper"></div><div class="footer van-hairline--top">关闭</div></div><div class="walking-panel" style="display: none;"><div class="contain-wrapper"></div><div class="footer van-hairline--top"><div class="cancle">取消导航</div><div class="fold">收起导航</div><div class="to-gaode">去高德</div></div><div class="unfold van-hairline--top" style="display: none;"></div></div><script src="https://webapi.amap.com/maps?v=2.0&key=ad06eb647059cc9d1dd046e4d26ab8bb&plugin=AMap.Walking"></script></body></html>
+    }</style><script defer="defer" src="main.bundle.3edb758d6666cbdff0bf.js"></script></head><body class="loading"><div id="container"></div><div class="amap-geolocations"><img src="https://a.amap.com/jsapi/static/image/plugin/waite.png" style="display: none;"></div><div class="poi-popup"></div><div class="poi-detail-popup" style="display: none;"><div class="contain-wrapper"></div><div class="footer van-hairline--top">关闭</div></div><div class="walking-panel" style="display: none;"><div class="contain-wrapper"></div><div class="footer van-hairline--top"><div class="cancle">取消导航</div><div class="fold">收起导航</div><div class="to-gaode">去高德</div></div><div class="unfold van-hairline--top" style="display: none;"></div></div><script src="https://webapi.amap.com/maps?v=2.0&key=ad06eb647059cc9d1dd046e4d26ab8bb"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-188791875-1"></script><script>window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      window.GA_MEASUREMENT_ID = 'UA-188791875-1';
+      gtag('config', window.GA_MEASUREMENT_ID, {
+          send_page_view: false
+      });
+
+      // Feature detects Navigation Timing API support.
+      if (window.performance) {
+          // Gets the number of milliseconds since page load
+          // (and rounds the result since the value must be an integer).
+          var timeSincePageLoad = Math.round(performance.now());
+
+          // Sends the timing event to Google Analytics.
+          gtag('event', 'timing_complete', {
+              'name': 'load',
+              'value': timeSincePageLoad,
+              'event_category': 'JS Dependencies'
+          });
+      }</script></body></html>
